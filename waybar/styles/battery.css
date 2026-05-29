@@ -1,0 +1,31 @@
+#battery {
+    margin-right: 15px;
+    padding: 0 15px 0 10px;
+    color: #fff;
+    border-radius: 45px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #6ef6a7;
+    border: 1px solid #26A65B;
+    background-color: #085026;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffbe6a;
+        color: #000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #fff;
+    border: 1px solid #c30d0d;
+    background-color: #ff0000;
+    
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

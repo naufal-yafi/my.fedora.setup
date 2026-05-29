@@ -1,0 +1,30 @@
+* {
+    font-family: 'FiraCode Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-size: 12px;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    margin: 0 4px;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}

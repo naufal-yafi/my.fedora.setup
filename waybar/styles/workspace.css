@@ -1,0 +1,30 @@
+#workspaces {
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    color: #fff;
+    margin: 0 2px;
+    padding: 0 5px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: all 150ms ease-in-out;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: #000;
+    min-width: 45px;
+    min-height: 20px;
+    background: #fff;
+}
+
+#workspaces button.urgent {
+    color: #fff;
+    background: #eb4d4b;
+    border-color: #eb4d4b;
+}
