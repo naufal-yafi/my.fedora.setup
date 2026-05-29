@@ -2,6 +2,8 @@
 
 Minimal setup to daily use.
 
+![Wallpaper](./.github/screenshot.png)
+
 ## Table of Contents
 - [My Ricing Fedora Sway](#my-ricing-fedora-sway)
   - [Table of Contents](#table-of-contents)
