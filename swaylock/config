@@ -1,0 +1,11 @@
+image=/home/yappii/.config/sway/background/wp-ghibli-style.jpg
+scaling=fill
+
+indicator
+clock
+timestr=%H:%M
+datestr=%A, %d %B
+
+font=Sans
+indicator-radius=120
+indicator-thickness=10
