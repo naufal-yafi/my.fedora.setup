@@ -9,6 +9,11 @@ exec_always gammastep -O 4500 &
 exec_always --no-startup-id blueman-applet
 exec_always swaybg -i ~/.config/sway/background/wp-ghibli-style.jpg -m fill
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+exec systemctl --user start sway-session.target
+exec systemctl --user status graphical-session.target
+
 output * adaptive_sync on
 
 ### Variables
