@@ -6,6 +6,7 @@
 }
 
 #battery.charging, #battery.plugged {
+    margin-right: 0px;
     color: #6ef6a7;
     border: 1px solid #26A65B;
     background-color: #085026;
