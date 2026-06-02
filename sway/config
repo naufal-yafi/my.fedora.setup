@@ -5,7 +5,6 @@ font pango:FiraCode Nerd Font Mono 11
 ### Autoload
 exec_always waybar
 exec_always nm-applet
-exec_always gammastep -O 4500 &
 exec_always --no-startup-id blueman-applet
 exec_always swaybg -i ~/.config/sway/background/wp-ghibli-style.jpg -m fill
 
@@ -29,8 +28,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun -theme ~/.config/rofi/themes/r
 
 ### Idle configuration
 exec swayidle -w \
- timeout 300 'swaylock -f' \
- timeout 600 'systemctl suspend' \
+ timeout 1800 'swaylock -f' \
+ timeout 3000 'systemctl suspend'
 
 ### Configuration Files
 include ~/.config/sway/.config.d/style.conf
