@@ -21,6 +21,7 @@
         "battery",
         "pulseaudio", 
         "tray",
+        "custom/nightlight",
         "custom/power"
     ],
 
@@ -141,6 +142,11 @@
                 "format": " ",
                 "tooltip": false,
                 "on-click": "shutdown now"
+            },
+            "custom/nightlight": {
+                "format": "󱩌 ",
+                "tooltip": false,
+                "on-click": "gammastep -O 4500"
             }
         // ---- Right Modules ----
         

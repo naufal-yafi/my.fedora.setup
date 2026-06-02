@@ -12,3 +12,12 @@
     background-color: #fff;
     color: #000;
 }
+
+#custom-nightlight {
+    border-radius: 45px;
+    border: 1px solid #fff;
+    padding: 0px 10px 0px 15px;
+} #custom-nightlight:hover {
+    background-color: #fff;
+    color: #000;
+}
