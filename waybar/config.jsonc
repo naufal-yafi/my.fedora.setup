@@ -29,7 +29,8 @@
 
         // ---- Left Modules ----
             "custom/logo": {
-                "format": ""
+                "format": "",
+                "tooltip-format": "fedora sway"
             },
 
             "sway/workspaces": {
