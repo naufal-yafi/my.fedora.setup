@@ -6,6 +6,7 @@ font pango:FiraCode Nerd Font Mono 11
 exec_always waybar
 exec_always nm-applet
 exec_always --no-startup-id blueman-applet
+exec_always ~/.config/scripts/auto-rotate.sh
 exec_always swaybg -i ~/.config/sway/background/wp-ghibli-style.jpg -m fill
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
@@ -27,9 +28,9 @@ set $rofi_cmd rofi \
 set $menu $rofi_cmd -show combi -combi-modes drun -theme ~/.config/rofi/themes/rounded-gray-dark.rasi #run -modes combi
 
 ### Idle configuration
-exec swayidle -w \
- timeout 1800 'swaylock -f' \
- timeout 3000 'systemctl suspend'
+# exec swayidle -w \
+# timeout 1800 'swaylock -f' \
+# timeout 3000 'systemctl suspend'
 
 ### Configuration Files
 include ~/.config/sway/.config.d/style.conf
