@@ -30,7 +30,8 @@
         // ---- Left Modules ----
             "custom/logo": {
                 "format": "",
-                "tooltip-format": "fedora sway"
+                "tooltip-format": "fedora sway",
+                "on-click": "rofi -show combi -combi-modes drun -theme ~/.config/rofi/themes/rounded-gray-dark.rasi"
             },
 
             "sway/workspaces": {
@@ -133,7 +134,7 @@
 
             "tray": {
                 "icon-size": 21,
-                "spacing": 10,
+                "spacing": 10
                 // "icons": {
                 //   "blueman": "bluetooth"
                 // }
@@ -145,9 +146,10 @@
                 "on-click": "shutdown now"
             },
             "custom/nightlight": {
-                "format": "󱩌 ",
-                "tooltip": false,
-                "on-click": "gammastep -O 4500"
+                "format": "{}",
+                "exec": "~/.config/waybar/scripts/nightlight/status.sh",
+                "on-click": "~/.config/waybar/scripts/nightlight/toggle.sh",
+                "interval": 2
             }
         // ---- Right Modules ----
         
