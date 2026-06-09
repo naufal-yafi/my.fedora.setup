@@ -1,23 +1,34 @@
 #custom-logo {
-    padding: 0;
-    margin: 0 10px 0 0;
-    font-size: 24px;
+  padding: 0;
+  font-size: 24px;
+  margin: 0 10px 0 0;
+}
+
+#custom-power {
+  border-radius: 999px;
+  padding: 3px 12px 3px 17px;
+  background: #ffcd37;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#custom-ollama,
+#custom-nightlight,
+#custom-virtualkeyboard {
+  padding: 3px 15px 3px 17px;
 }
 
 #custom-power,
 #custom-ollama,
 #custom-nightlight,
 #custom-virtualkeyboard {
-    border-radius: 45px;
-    border: 1px solid #fff;
-    padding: 0px 10px 0px 15px;
-} 
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
 
 #custom-power:hover,
 #custom-ollama:hover,
 #custom-nightlight:hover,
-#custom-virtualkeyboard:hover
- {
-    background-color: #fff;
-    color: #000;
+#custom-virtualkeyboard:hover {
+  background-color: #fff;
+  color: #000;
 }

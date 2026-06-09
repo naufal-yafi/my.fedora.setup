@@ -1,30 +1,31 @@
 #workspaces {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #workspaces button {
-    color: #fff;
-    margin: 0 2px;
-    padding: 0 5px;
-    min-width: 20px;
-    min-height: 20px;
-    border-radius: 999px;
-    background: transparent;
-    border: 1px solid #fff;
-    transition: all 150ms ease-in-out;
+  color: #fff;
+  margin: 0 2px;
+  padding: 0 5px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 999px;
+  background: transparent;
+  transition: all 150ms ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-    color: #000;
-    min-width: 45px;
-    min-height: 20px;
-    background: #fff;
+  color: #fff;
+  min-width: 45px;
+  min-height: 20px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #workspaces button.urgent {
-    color: #fff;
-    background: #eb4d4b;
-    border-color: #eb4d4b;
+  color: #fff;
+  background: #eb4d4b;
+  border-color: #eb4d4b;
 }

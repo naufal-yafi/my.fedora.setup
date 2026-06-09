@@ -1,32 +1,38 @@
-#battery {
-    margin-right: 15px;
-    padding: 0 15px 0 10px;
-    color: #fff;
-    border-radius: 45px;
+#battery,
+#custom-nightlight {
+  margin-right: 16px;
+  transition: all 0.2s ease;
+  padding: 3px 20px 3px 17px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-#battery.charging, #battery.plugged {
-    margin-right: 0px;
-    color: #6ef6a7;
-    border: 1px solid #26A65B;
-    background-color: #085026;
+#battery.charging,
+#battery.plugged {
+  color: #6ef6a7;
+  border: 1px solid #26a65b;
+  background-color: #085026;
 }
 
 @keyframes blink {
-    to {
-        background-color: #ffbe6a;
-        color: #000;
-    }
+  to {
+    background-color: #ffbe6a;
+    color: #000;
+  }
 }
 
 #battery.critical:not(.charging) {
-    color: #fff;
-    border: 1px solid #c30d0d;
-    background-color: #ff0000;
-    
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  color: #fff;
+  border: 1px solid #c30d0d;
+  background-color: #ff0000;
+
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(12);
 }

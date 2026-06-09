@@ -1,30 +1,32 @@
 * {
-    font-family: 'FiraCode Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 12px;
+  font-family:
+    "FiraCode Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands",
+    monospace;
+  font-size: 12px;
 }
 
 window#waybar {
-    background: transparent;
-    color: white;
-    transition-duration: .5s;
+  background: transparent;
+  color: white;
+  transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 #window {
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 label:focus {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+  margin-right: 0;
 }
