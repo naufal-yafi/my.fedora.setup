@@ -12,6 +12,7 @@ Minimal setup to daily use.
     - [Optimizing](#optimizing)
       - [Suspend](#suspend)
       - [Setup ZRAM](#setup-zram)
+    - [Install Waydroid](#install-waydroid)
 
 ### Keybindings
 
@@ -111,3 +112,15 @@ zram-size = ram * 1.5
 compression-algorithm = zstd
 ```
 
+### Install Waydroid
+
+```sh
+sudo dnf copr enable aleasto/waydroid -y && sudo dnf install waydroid -y
+```
+
+```sh
+sudo waydroid init \
+  -s GAPPS \
+  -c https://ota.waydro.id/system \
+  -v https://ota.waydro.id/vendor
+```
