@@ -7,7 +7,7 @@ exec_always waybar
 exec_always nm-applet
 exec_always --no-startup-id blueman-applet
 exec_always ~/.config/scripts/auto-rotate.sh
-exec_always swaybg -i ~/.config/sway/background/wp-ghibli-style.jpg -m fill
+exec_always swaybg -i ~/.config/sway/background/space.png -m fill
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP

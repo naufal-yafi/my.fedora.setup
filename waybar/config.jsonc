@@ -1,8 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-
-    "spacing": 4,
+    
     "height": 10,
     "width": 1890,
     "margin-top": 10,
@@ -106,7 +105,6 @@
                 "format-full": "{capacity}% {icon}",
                 "format-charging": "{capacity}% ",
                 "format-plugged": "{capacity}% ",
-                "format-alt": "{time} {icon}",
                 "format-icons": ["", "", "", "", ""]
             },
             "battery#bat2": {
