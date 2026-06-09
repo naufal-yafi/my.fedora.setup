@@ -12,6 +12,7 @@ Minimal setup for daily use.
   - [Optimizing](#optimizing)
     - [Suspend](#suspend)
     - [Setup ZRAM](#setup-zram)
+  - [Setup Virtual Keyboard](#setup-virtual-keyboard)
   - [Setup Waydroid](#setup-waydroid)
     - [Installation](#installation)
     - [Setup libndk for waydroid](#setup-libndk-for-waydroid)
@@ -121,6 +122,16 @@ zram-size = ram * 1.5
 compression-algorithm = zstd
 ```
 
+## Setup Virtual Keyboard
+
+```sh
+git clone https://github.com/jjsullivan5196/wvkbd.git
+```
+
+```sh
+sudo make install
+```
+
 ## Setup Waydroid
 
 ### Installation
@@ -160,31 +171,31 @@ Setting up libndk can help resolve these issues and increase application compati
 
 ### 1. Clone repo
 
-```
+```sh
 git clone https://github.com/casualsnek/waydroid_script
 ```
 
 ### 2. Create venv
 
-```
+```sh
 python3 venv/venv
 ```
 
 ### 3. In venv
 
-```
+```sh
 source venv/bin/activate
 ```
 
 ### 4. Install dependency
 
-```
+```sh
 sudo pip install -r requirements.txt
 ```
 
 ### 5. Run script
 
-```
+```sh
 sudo python3 main.py
 
 # choose your android version
