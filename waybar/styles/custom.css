@@ -4,29 +4,20 @@
     font-size: 24px;
 }
 
-#custom-power {
-    border-radius: 45px;
-    border: 1px solid #fff;
-    padding: 0px 10px 0px 15px;
-} #custom-power:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-#custom-nightlight {
-    border-radius: 45px;
-    border: 1px solid #fff;
-    padding: 0px 10px 0px 15px;
-} #custom-nightlight:hover {
-    background-color: #fff;
-    color: #000;
-}
-
+#custom-power,
+#custom-ollama,
+#custom-nightlight,
 #custom-virtualkeyboard {
     border-radius: 45px;
     border: 1px solid #fff;
     padding: 0px 10px 0px 15px;
-} #custom-virtualkeyboard:hover {
+} 
+
+#custom-power:hover,
+#custom-ollama:hover,
+#custom-nightlight:hover,
+#custom-virtualkeyboard:hover
+ {
     background-color: #fff;
     color: #000;
 }

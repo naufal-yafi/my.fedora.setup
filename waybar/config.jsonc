@@ -21,6 +21,7 @@
         "battery",
         "pulseaudio", 
         "tray",
+        "custom/ollama",
         "custom/virtualkeyboard",
         "custom/nightlight",
         "custom/power"
@@ -139,6 +140,13 @@
                 // "icons": {
                 //   "blueman": "bluetooth"
                 // }
+            },
+
+            "custom/ollama": {
+                "format": "{}",
+                "exec": "~/.config/waybar/scripts/ollama/status.sh",
+                "on-click": "~/.config/waybar/scripts/ollama/toggle.sh",
+                "interval": 2
             },
 
             "custom/virtualkeyboard": {
